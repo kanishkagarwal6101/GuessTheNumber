@@ -24,7 +24,7 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   } else if (guess > number) {
     if (score > 1) {
-      document.querySelector('.message').textContent = 'Too high';
+      document.querySelector('.message').textContent = 'Too high, Guess lower';
       score--;
       document.querySelector('.score').textContent = score;
     } else {
@@ -34,7 +34,7 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   } else if (guess < number) {
     if (score > 1) {
-      document.querySelector('.message').textContent = 'Too low';
+      document.querySelector('.message').textContent = 'Too low, guess higher';
       score--;
       document.querySelector('.score').textContent = score;
     } else {
