@@ -12,7 +12,7 @@ let highscore = 0;
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
   if (!guess) {
-    document.querySelector('.message').textContent = '🤦‍♂️ No Number imputted!';
+    document.querySelector('.message').textContent = '🤦‍♂️ No Number has been entered!';
   } else if (guess === number) {
     document.querySelector('.message').textContent = '❤ Correct guess';
     document.querySelector('.number').textContent = number;
